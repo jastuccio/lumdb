@@ -20,7 +20,8 @@ class App extends Component {
 
 class Welcome extends Component {
   render() {
-    return <h1 className="App-title">{this.props.text}</h1>;
+    const { text } = this.props; //deconstruction
+    return <h1 className="App-title">{text}</h1>;
   }
 }
 
