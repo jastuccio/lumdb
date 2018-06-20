@@ -5,7 +5,7 @@ import Movie from './Movie';
 class MoviesList extends Component {
   state = {
     movies: [],
-  };
+  }
   async componentDidMount() {
     try {
       const res = await fetch(
