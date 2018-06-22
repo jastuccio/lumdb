@@ -7,6 +7,7 @@ class MoviesList extends PureComponent {
   state = {
     movies: [],
   }
+
   async componentDidMount() {
     try {
       const res = await fetch(
@@ -20,6 +21,7 @@ class MoviesList extends PureComponent {
       console.log(e);
     }
   }
+
   render() {
     return (
       <MovieGrid>
